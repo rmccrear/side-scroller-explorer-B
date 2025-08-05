@@ -2,6 +2,7 @@
 function setupSprites() {
   // Initialize score
   score = 0;
+  health = 100; // Initialize health
   
   // Create food sprite - moving from right to left
   food = createSprite(400, 150, 30, 30);
