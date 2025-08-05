@@ -5,4 +5,5 @@ function showBoards() {
   textSize(24);
   textAlign(LEFT, TOP);
   text("Score: " + score, 10, 10);
+  text("Health: " + health, 225, 10);
 }

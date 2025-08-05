@@ -8,5 +8,6 @@ function doSpriteInteraction() {
 
     if (enemy.isTouching(player)) {
         enemy.rotation = 25;
+        health = health - 1; // Decrease health by 1
     } else {enemy.rotation = 0}
 }
