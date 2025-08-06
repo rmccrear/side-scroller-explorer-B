@@ -25,9 +25,9 @@ function drawBackground() {
         score = 0;
         player.y = 320;
         background("#696969");
-        fill("red");
+        fill(255, 0, 0);
         ellipse(400, 0, 50, 50);
-        fill("#5D493C");
+        fill(93, 73, 60);
         rect(0, 400 - 100, 400, 100);
     }
 }
