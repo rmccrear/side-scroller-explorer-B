@@ -1,12 +1,17 @@
 
 function doSpriteMovement() {
     // Food movement - moves from right to left and repeats
+    // Food movement - moves randomly between 100 and 300 on the y axis
     if(food.x < 0) {
         food.x = 400;
+        food.y = randomNumber(100,300); 
+        food.velocityX = randomNumber(-1,-4);
     }
     
     // Enemy movement - moves from right to left and repeats
+    // Enemy movement - speeds up or slows down with a random number
     if(enemy.x < 0) {
-        enemy.x = 400;
+        enemy.x = randomNumber(400,500);
+        enemy.velocityX = randomNumber(-4,-7);
     }
 }
