@@ -13,9 +13,7 @@ function drawBackground() {
 
     // Grass at the bottom (100px high)
     fill(34, 139, 34);
-    rect(0, screenRight - 100, screenRight, 100);
-
-    // Game Over
+    rect(0, screenRight - 100, screenRight, 100);    // Game Over
     if(health <=0){
         fill(0, 0, 0);
         textSize(50);
