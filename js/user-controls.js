@@ -10,7 +10,7 @@ function respondToUser() {
   // Player jumping controls
   //changed playerVelocityY into a counter pattern
   if (keyWentDown("SPACE")) {
-    player.velocityY = player.velocityY -2;
+    player.velocityY = - 7;
     player.addAnimation('player', jumpingAnimation);
   } 
   
