@@ -8,14 +8,16 @@ function respondToUser() {
     player.addAnimation('player', playerAnimation);   
    }
   // Player jumping controls
+  //changed playerVelocityY into a counter pattern
   if (keyWentDown("SPACE")) {
-    player.velocityY = -4;
+    player.velocityY = player.velocityY -2;
     player.addAnimation('player', jumpingAnimation);
   } 
   
    
   // Set velocityY to 4 when player reaches y=100
+  //changed playerVelocityY into a counter pattern
   if (player.y <= 100) {
-    player.velocityY = 4;
+    player.velocityY = player.velocityY +2;
   }
 }
