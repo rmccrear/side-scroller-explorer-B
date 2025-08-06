@@ -10,4 +10,19 @@ function drawBackground() {
     // Grass at the bottom (100px high)
     fill(34, 139, 34);
     rect(0, 400 - 100, 400, 100);
+
+    // Game Over
+    if(health <=0){
+        fill(0, 0, 0);
+        textSize(50);
+        textAlign(CENTER);
+        text("Game Over", width / 2, height / 2);
+        health = 0;
+        score = 0;
+        player.y = 320;
+        background("#696969");
+        fill("red");
+        ellipse(400, 0, 50, 50);
+        fill("#5D493C");
+        rect(0, 400 - 100, 400, 100);    }
 }
