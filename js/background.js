@@ -10,4 +10,13 @@ function drawBackground() {
     // Grass at the bottom (100px high)
     fill(34, 139, 34);
     rect(0, 400 - 100, 400, 100);
+
+    // GAME OVER
+    if (health) {
+        background("black");
+        textSize(50);
+        fill("green");
+        text("Game Over!", 50, 200);
+    }
+
 }
