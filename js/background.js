@@ -13,7 +13,7 @@ function drawBackground() {
 
     // Grass at the bottom (100px high)
     fill(34, 139, 34);
-    rect(0, screenRight - 100, screenRight, 100);    // Game Over
+    rect(0, 300, screenRight, 100);    // Game Over
     if(health <=0){
         fill(0, 0, 0);
         textSize(50);
@@ -26,7 +26,7 @@ function drawBackground() {
         fill(255, 0, 0);
         ellipse(screenRight, 0, 50, 50);
         fill(93, 73, 60);
-        rect(0, screenRight - 100, screenRight, 100);
+        rect(0, screenRight - 100, 400, 100);
         enemy.velocityX = 0; // Stop enemy movement
         food.velocityX = 0; // Stop food movement
     }
