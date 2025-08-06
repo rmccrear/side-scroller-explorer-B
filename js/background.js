@@ -6,6 +6,7 @@ function drawBackground() {
     // TODO: Sun on the right side
     fill(255, 255, 0);
     ellipse(400, 0, 50, 50);
+    // Sun on left side
     if(health < 50){
         fill(255, 83, 73);
         ellipse(0, 0, 50, 50);
