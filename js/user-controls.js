@@ -9,7 +9,7 @@ function respondToUser() {
    }
   // Player jumping controls
   if (keyWentDown("SPACE")) {
-    player.velocityY = -4;
+    player.velocityY = -7;
     player.addAnimation('player', jumpingAnimation);
   } 
   
