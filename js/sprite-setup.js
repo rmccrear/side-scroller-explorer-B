@@ -13,7 +13,7 @@ function setupSprites() {
   // Create player sprite
   player = createSprite(200, 320, 40, 40);
   player.addAnimation('player', playerAnimation);
-  
+    
   // Create enemy sprite - moving from right to left
   enemy = createSprite(400, 320, 35, 35);
   enemy.addAnimation('enemy', enemyAnimation);
