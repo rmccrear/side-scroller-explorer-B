@@ -7,6 +7,7 @@ function drawBackground() {
     fill(255, 255, 0);
     ellipse(400, 0, 50, 50);
     // Sun on left side
+    ellipse(screenRight, 0, 50, 50);
     if(health < 50){
         fill(255, 83, 73);
         ellipse(0, 0, 50, 50);
@@ -14,7 +15,7 @@ function drawBackground() {
 
     // Grass at the bottom (100px high)
     fill(34, 139, 34);
-    rect(0, 400 - 100, 400, 100);
+    rect(0, screenRight - 100, screenRight, 100);
 
     // Game Over
     if(health <=0){
@@ -27,9 +28,9 @@ function drawBackground() {
         player.y = 320;
         background("#696969");
         fill(255, 0, 0);
-        ellipse(400, 0, 50, 50);
+        ellipse(screenRight, 0, 50, 50);
         fill(93, 73, 60);
-        rect(0, 400 - 100, 400, 100);
+        rect(0, screenRight - 100, screenRight, 100);
         enemy.velocityX = 0; // Stop enemy movement
         food.velocityX = 0; // Stop food movement
     }
