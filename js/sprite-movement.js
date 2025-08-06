@@ -11,7 +11,7 @@ function doSpriteMovement() {
     // Enemy movement - moves from right to left and repeats
     // Enemy movement - speeds up or slows down with a random number
     if(enemy.x < 0) {
-        enemy.x = randomNumber(screenRight,screenRight+100);
+        enemy.x = screenRight + 20;
         enemy.velocityX = randomNumber(-4,-7);
     }
 }
