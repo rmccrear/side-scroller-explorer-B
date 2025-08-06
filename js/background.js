@@ -12,11 +12,18 @@ function drawBackground() {
     rect(0, 400 - 100, 400, 100);
 
     // GAME OVER
-    if (health) {
+    if (health <=0) {
         background("black");
         textSize(50);
-        fill("green");
+        fill("#008000");
         text("Game Over!", 50, 200);
+        player.visible = false;
+        food.visible = false;
+        enemy.visible = false;
+    } else {
+        player.visible = true;
+        food.visible = true;
+        enemy.visible = true;
     }
 
 }
