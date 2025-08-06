@@ -24,5 +24,6 @@ function drawBackground() {
         fill("red");
         ellipse(400, 0, 50, 50);
         fill("#5D493C");
-        rect(0, 400 - 100, 400, 100);    }
+        rect(0, 400 - 100, 400, 100);
+    }
 }
