@@ -26,7 +26,7 @@ function drawBackground() {
         fill(255, 0, 0);
         ellipse(screenRight, 0, 50, 50);
         fill(93, 73, 60);
-        rect(0, screenRight - 100, screenRight, 100);
+        rect(0, screenRight - 100, 400, 100);
         enemy.velocityX = 0; // Stop enemy movement
         food.velocityX = 0; // Stop food movement
     }
